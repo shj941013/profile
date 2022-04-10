@@ -1,0 +1,19 @@
+@import "../../global.scss";
+
+.portfolioList{
+    font-size: 14px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    // To get rid of scroll bars
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    
+    &.active{
+        background-color: $mainColor;
+        color: white;
+    }
+}
