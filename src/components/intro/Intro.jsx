@@ -3,6 +3,7 @@ import profile_pic from "../../assets/profile_pic.jpg"
 import down from "../../assets/down.png"
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import resume from '../../assets/Hyunjae.Song.Resume.pdf'
 
 export default function Intro() {
   const textRef = useRef();
