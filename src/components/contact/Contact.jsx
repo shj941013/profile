@@ -1,4 +1,5 @@
 import { useState } from "react";
+import shake from "../../assets/shake.svg"
 import "./contact.scss"
 
 export default function Contact() {
@@ -12,7 +13,7 @@ export default function Contact() {
   return (
     <div className='contact' id="contact">
         <div className="left">
-          <img src="assets/shake.svg" alt="" />
+          <img src={shake} alt="" />
         </div>
 
         <div className="right">

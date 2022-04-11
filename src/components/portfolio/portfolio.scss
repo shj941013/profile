@@ -13,6 +13,10 @@
         &::-webkit-scrollbar{
             display: none;
         }    
+
+        @include mobile {
+            font-size: 20px;
+        }
     }
 
     ul{
@@ -20,6 +24,12 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile{
+            margin: 10px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     .container{
@@ -34,7 +44,11 @@
         scrollbar-width: none; //for firefox
         &::-webkit-scrollbar{
             display: none;
-        }    
+        }
+
+        @include mobile {
+            width: 100%;
+        }
 
         .item{
             width: 220px;
@@ -50,6 +64,10 @@
             transition: all 0.5s ease;
             cursor: pointer;
 
+            @include mobile{
+                width: 130px;
+                height: 100px;
+            }
             h3{
                 position: absolute;
                 font-size: 20px;
